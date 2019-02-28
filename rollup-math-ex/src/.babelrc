@@ -1,0 +1,8 @@
+// modules: false - prevent babel from converting modules to CommonJS before Rollup can process them
+// .babelrc in /src rather than root allows possibility to have separate .babelrc for things like tests
+
+{
+  "presets": [
+    ["@babel/env", {"modules": false}]
+  ]
+}
